@@ -255,7 +255,7 @@ main {
 }
 .transaction{
     padding: 1rem;
-    width: 90%;
+    max-width: 100%;
 }
 @media (max-width: 960px) {
     .headings {
