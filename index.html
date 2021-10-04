@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./75-1-01.png" />
+    <title>Beyond</title>
+
+    <!-- CharJs CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    
+    <script src="app.js" defer></script>
+
+</head>
+<body class="m-0">
+    <div class="cover"></div>
+    <nav>
+        <span class="ham material-icons">menu</span>
+        <a id="nav_logo" class="d-b" href="#"><img class="fit_img" src="./75-1-01.png" alt="logo"></a>
+        <div class="nav_admin">
+            <img class="fit_img admin_img" src="./admin.jpg" alt="admin_img">
+        </div>
+    </nav>
+    <aside>
+        <div id="aside_logo">
+            <a class="d-b" href="#"><img class="fit_img" src="./75-1-01.png" alt="logo"></a>
+        </div>
+        <div id="aside_admin">
+            <div class="card flex_align">
+                <img class="fit_img admin_img" src="./admin.jpg" alt="admin_img">
+                <div>
+                    <h6>Admin John</h6>
+                    <p>Your plan: Premium</p>
+                </div>
+            </div>
+        </div>
+        <div class="aside_main">
+            <ul>
+                <li>GENERAL</li>
+                <ul>
+                    <li class="list_item">
+                        <a style="color: var(--text-blue);" class="flex_align" href="#c">
+                            <span class="material-icons">dashboard</span>
+                            <div>Dashboard</div>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="flex_align" href="#">
+                            <span class="material-icons">paid</span>
+                            <div>Transactions</div>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="flex_align" href="#">
+                            <span class="material-icons">person</span>
+                            <div>Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+            <ul style="margin: 1.5rem 0;">
+                <li>MANAGEMENT</li>
+                <ul>
+                    <li class="list_item has-sub">
+                        <a class="flex_align" href="#">
+                            <span class="material-icons">people</span>
+                            <div>Customers</div>
+                            <span class="arrow material-icons">arrow_drop_down</span>
+                        </a>
+                        <div class="sub">
+                            <a href="#">List</a>
+                            <a href="#">Details</a>
+                            <a href="#">Edit</a>
+                        </div>
+                    </li>
+                    <li class="list_item has-sub">
+                        <a class="flex_align" href="#">
+                            <span class="material-icons">shopping_bag</span>
+                            <div>Products</div>
+                            <span class="arrow material-icons">arrow_drop_down</span>
+                        </a>
+                        <div class="sub">
+                            <a href="#">Products View</a>
+                            <a href="#">Categories</a>
+                        </div>
+                    </li>
+                    <li class="list_item has-sub">
+                        <a class="flex_align" href="#">
+                            <span class="material-icons">shopping_cart</span>
+                            <div>Orders</div>
+                            <span class="arrow material-icons">arrow_drop_down</span>
+                        </a>
+                        <div class="sub">
+                            <a href="#">List</a>
+                            <a href="#">Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="headings flex_align">
+            <div class="good">
+                <p>OVERVIEW</p>
+                <h3>Good Morninig, John</h3>
+                <p>Here's what's happening with your shop today</p>
+            </div>
+            <button class="cta card flex_align">
+                <span class="material-icons">add</span>
+                <p>New Transaction</p>
+            </button>
+        </div>
+        <div class="data_grid">
+            <div class="card flex_align">
+                <div class="chart">
+                    <canvas id="btc"></canvas>
+                </div>
+                
+                <div class="chart_detail">
+                    <h1 style="color: rgb(104, 142, 255)">0.343 BTC</h1>
+                    <p>Weekly earnings</p>
+                </div>
+            </div>
+            <div class="card flex_align">
+                <div class="chart">
+                    <canvas id="dollar"></canvas>
+                </div>
+
+                <div class="chart_detail">
+                    <h1>$2,343.00</h1>
+                    <p>Your private wallet</p>
+                </div>
+            </div>
+            <div class="card bar_graph">
+                <div class="headings">
+                    <h3>Total Transactions</h3>
+                    <p>Oct 2021</p>
+                </div>
+                <div class="transaction">
+                    <canvas id="transaction"></canvas>
+                </div>
+            </div>
+
+            <div class="card notify">
+                <div style="margin-top: 1rem;" class="headings">
+                    <h3>Praza 717</h3>
+                    <p>2010</p>
+                </div>
+                <div>
+                    <h1>$2,000</h1>
+                    <p>Octpober 2011 | SBC</p>
+                </div>
+                <div>
+                    <h1>$4,500</h1>
+                    <p>Octpober 2014 | Tisama</p>
+                </div>
+                <div>
+                    <h1>$5,700</h1>
+                    <p>Octpober 2017 | BCS</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
