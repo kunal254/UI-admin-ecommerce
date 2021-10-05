@@ -80,7 +80,13 @@ nav {
 }
 
 /* nav end */
-
+aside::-webkit-scrollbar{
+    width: 5px;
+}
+aside::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: var(--text-grey);
+}
 aside {
     overflow-y: auto;
     position: fixed;
